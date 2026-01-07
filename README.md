@@ -1,12 +1,30 @@
 # 🎨 FANA UI Framework
 
+<div align="center">
+
+![FANA UI](https://img.shields.io/badge/FANA%20UI-v1.0.0-blue?style=for-the-badge)
+![CSS](https://img.shields.io/badge/CSS-Framework-1572B6?style=for-the-badge&logo=css3)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![GitHub Stars](https://img.shields.io/github/stars/Cococip/fana-ui?style=for-the-badge)
+
 **Simple, Powerful, Beautiful** - CSS Framework yang menggabungkan kelebihan Tailwind CSS dan Bootstrap
+
+[🚀 Live Demo](https://cococip.github.io/fana-ui/) • [📚 Documentation](#-cara-penggunaan) • [⚡ Quick Start](#-quick-start) • [🎨 Components](#-apa-yang-ada-di-dalam)
+
+</div>
+
+---
+
+## ✨ Kenapa FANA UI?
 
 FANA UI adalah framework CSS modern yang dirancang untuk developer yang menginginkan:
 - ✅ **Utility classes** yang fleksibel seperti Tailwind
 - ✅ **Komponen siap pakai** yang indah seperti Bootstrap  
 - ✅ **Naming yang intuitif** dan mudah diingat
 - ✅ **Lebih simple** tapi tetap powerful
+
+### 🌐 Live Demo
+Lihat framework dalam aksi: **[https://cococip.github.io/fana-ui/](https://cococip.github.io/fana-ui/)**
 
 ---
 
@@ -27,6 +45,20 @@ FANA UI adalah framework CSS modern yang dirancang untuk developer yang mengingi
 ```html
 <link rel="stylesheet" href="https://cdn.fana-ui.com/fana.css">
 ```
+
+### 📸 Screenshots
+
+<div align="center">
+
+**Hero Section & Features**
+![FANA UI Demo](https://via.placeholder.com/800x400/0ea5e9/ffffff?text=Beautiful+Components)
+
+**Buttons & Cards**
+![Components](https://via.placeholder.com/800x400/a855f7/ffffff?text=Powerful+Utilities)
+
+</div>
+
+> 💡 **Lihat live demo lengkap di:** [https://cococip.github.io/fana-ui/](https://cococip.github.io/fana-ui/)
 
 ---
 
@@ -355,6 +387,32 @@ Terinspirasi dari:
 
 ---
 
-**Happy Coding! 🎉**
+## ⭐ Star This Repository
 
-Made with ❤️ by FANA UI Team
+Jika kamu suka FANA UI, jangan lupa kasih **⭐ Star** di GitHub!
+
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/Cococip/fana-ui?style=social)](https://github.com/Cococip/fana-ui/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Cococip/fana-ui?style=social)](https://github.com/Cococip/fana-ui/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/Cococip/fana-ui?style=social)](https://github.com/Cococip/fana-ui/watchers)
+
+</div>
+
+---
+
+<div align="center">
+
+## 🎉 **Happy Coding!**
+
+**Made with ❤️ by FANA UI Team**
+
+[🌐 Live Demo](https://cococip.github.io/fana-ui/) • [📦 GitHub](https://github.com/Cococip/fana-ui) • [📚 Docs](#-cara-penggunaan)
+
+---
+
+![Footer](https://img.shields.io/badge/FANA%20UI-Simple%20%7C%20Powerful%20%7C%20Beautiful-blue?style=for-the-badge)
+
+**© 2026 FANA UI. All rights reserved.**
+
+</div>
