@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FANA UI - Modern CSS Framework</title>
+  <meta name="description" content="FANA UI adalah CSS framework yang simple, powerful, dan mudah digunakan. Kombinasi terbaik dari Tailwind dan Bootstrap.">
+  <link rel="stylesheet" href="fana.css">
+  <style>
+    /* Demo specific styles */
+    .demo-section {
+      padding: var(--space-16) 0;
+      border-bottom: var(--border-width-1) solid var(--gray-200);
+    }
+
+    .demo-section:last-child {
+      border-bottom: none;
+    }
+
+    .demo-title {
+      font-size: var(--text-4xl);
+      font-weight: var(--font-bold);
+      color: var(--gray-900);
+      margin-bottom: var(--space-4);
+    }
+
+    .demo-subtitle {
+      font-size: var(--text-lg);
+      color: var(--gray-600);
+      margin-bottom: var(--space-8);
+    }
+
+    .component-showcase {
+      background-color: var(--gray-50);
+      padding: var(--space-8);
+      border-radius: var(--radius-xl);
+      margin-bottom: var(--space-6);
+    }
+
+    .code-block {
+      background-color: var(--gray-900);
+      color: var(--gray-100);
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: var(--text-sm);
+      line-height: var(--leading-relaxed);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+      color: var(--white);
+      padding: var(--space-24) 0;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: var(--text-6xl);
+      font-weight: var(--font-black);
+      margin-bottom: var(--space-6);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-description {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-8);
+      opacity: 0.95;
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+      border-radius: var(--radius-xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-4);
+    }
+
+    .color-swatch {
+      width: 100%;
+      height: 80px;
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--space-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: var(--font-semibold);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-sticky">
+    <div class="navbar-brand">🎨 FANA UI</div>
+    <ul class="navbar-nav">
+      <li class="navbar-item"><a href="#home" class="navbar-link active">Home</a></li>
+      <li class="navbar-item"><a href="#components" class="navbar-link">Components</a></li>
+      <li class="navbar-item"><a href="#utilities" class="navbar-link">Utilities</a></li>
+      <li class="navbar-item"><a href="#docs" class="navbar-link">Docs</a></li>
+    </ul>
+    <button class="navbar-toggle">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="hero-title">FANA UI Framework</h1>
+      <p class="hero-description">
+        CSS Framework yang Simple, Powerful, dan Mudah Digunakan<br>
+        Kombinasi Terbaik dari Tailwind & Bootstrap
+      </p>
+      <div class="flex justify-center gap-4">
+        <button class="btn btn-lg bg-white text-primary">Get Started</button>
+        <button class="btn btn-lg btn-outline-primary" style="border-color: white; color: white;">View on GitHub</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="demo-title text-center">Kenapa FANA UI?</h2>
+      <p class="demo-subtitle text-center">Framework yang dirancang untuk developer modern</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="feature-icon mx-auto">⚡</div>
+          <h3 class="text-2xl font-bold mb-3">Simple & Intuitif</h3>
+          <p class="text-gray-600">Naming yang mudah diingat dan konsisten. Tidak perlu belajar lama untuk mulai produktif.</p>
+        </div>
+        <div class="text-center">
+          <div class="feature-icon mx-auto">🎨</div>
+          <h3 class="text-2xl font-bold mb-3">Beautiful by Default</h3>
+          <p class="text-gray-600">Komponen yang sudah indah dari awal. Tinggal pakai, langsung keren!</p>
+        </div>
+        <div class="text-center">
+          <div class="feature-icon mx-auto">🚀</div>
+          <h3 class="text-2xl font-bold mb-3">Powerful & Flexible</h3>
+          <p class="text-gray-600">Utility classes lengkap + komponen siap pakai. Best of both worlds!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buttons Section -->
+  <section class="demo-section" id="components">
+    <div class="container">
+      <h2 class="demo-title">Buttons</h2>
+      <p class="demo-subtitle">Beautiful and interactive button components</p>
+
+      <div class="component-showcase">
+        <h3 class="text-xl font-semibold mb-4">Button Variants</h3>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-warning">Warning</button>
+          <button class="btn btn-danger">Danger</button>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Outline Buttons</h3>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <button class="btn btn-outline-primary">Primary</button>
+          <button class="btn btn-outline-secondary">Secondary</button>
+          <button class="btn btn-outline-success">Success</button>
+          <button class="btn btn-outline-danger">Danger</button>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Button Sizes</h3>
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          <button class="btn btn-primary btn-sm">Small</button>
+          <button class="btn btn-primary">Default</button>
+          <button class="btn btn-primary btn-lg">Large</button>
+          <button class="btn btn-primary btn-xl">Extra Large</button>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Button States</h3>
+        <div class="flex flex-wrap gap-3">
+          <button class="btn btn-primary">Normal</button>
+          <button class="btn btn-primary" disabled>Disabled</button>
+          <button class="btn btn-primary btn-loading">Loading</button>
+        </div>
+      </div>
+
+      <div class="code-block">
+&lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="btn btn-outline-secondary"&gt;Outline Button&lt;/button&gt;
+&lt;button class="btn btn-success btn-lg"&gt;Large Success&lt;/button&gt;
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="demo-section">
+    <div class="container">
+      <h2 class="demo-title">Cards</h2>
+      <p class="demo-subtitle">Flexible and beautiful card components</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Card Title</h3>
+            <p class="card-subtitle">Card subtitle</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This is a simple card with header, body, and footer sections. Perfect for displaying content.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary btn-sm">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card card-primary">
+          <div class="card-body">
+            <h3 class="card-title">Primary Card</h3>
+            <p class="card-text">Beautiful gradient background with white text. Great for highlighting important content.</p>
+            <button class="btn bg-white text-primary mt-4">Action</button>
+          </div>
+        </div>
+
+        <div class="card card-elevated">
+          <div class="card-body">
+            <h3 class="card-title">Elevated Card</h3>
+            <p class="card-text">Card with elevated shadow for more depth and visual hierarchy.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-block">
+&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;p class="card-text"&gt;Card content here&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+      </div>
+    </div>
+  </section>
+
+  <!-- Forms Section -->
+  <section class="demo-section">
+    <div class="container">
+      <h2 class="demo-title">Forms</h2>
+      <p class="demo-subtitle">Beautiful and accessible form elements</p>
+
+      <div class="component-showcase">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="form-group">
+              <label class="form-label form-label-required">Full Name</label>
+              <input type="text" class="form-input" placeholder="Enter your name">
+              <span class="form-help">Please enter your full name</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input form-input-success" value="user@example.com">
+              <span class="form-feedback form-feedback-success">✓ Email is valid</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-input form-input-error" value="123">
+              <span class="form-feedback form-feedback-error">Password must be at least 8 characters</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Country</label>
+              <select class="form-select">
+                <option>Select country</option>
+                <option>Indonesia</option>
+                <option>Malaysia</option>
+                <option>Singapore</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-textarea" placeholder="Enter your message"></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" checked>
+                <label class="form-check-label" for="check1">I agree to terms and conditions</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2">
+                <label class="form-check-label" for="check2">Subscribe to newsletter</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-switch">
+                <input type="checkbox" class="form-switch-input" id="switch1" checked>
+                <label for="switch1">Enable notifications</label>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block">Submit Form</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-block">
+&lt;div class="form-group"&gt;
+  &lt;label class="form-label"&gt;Email&lt;/label&gt;
+  &lt;input type="email" class="form-input" placeholder="Enter email"&gt;
+&lt;/div&gt;
+
+&lt;div class="form-check"&gt;
+  &lt;input type="checkbox" class="form-check-input" id="check"&gt;
+  &lt;label class="form-check-label" for="check"&gt;Remember me&lt;/label&gt;
+&lt;/div&gt;
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Components -->
+  <section class="demo-section">
+    <div class="container">
+      <h2 class="demo-title">Navigation</h2>
+      <p class="demo-subtitle">Tabs, pills, and breadcrumbs</p>
+
+      <div class="component-showcase">
+        <h3 class="text-xl font-semibold mb-4">Tabs</h3>
+        <div class="tabs">
+          <button class="tab active">Home</button>
+          <button class="tab">Profile</button>
+          <button class="tab">Settings</button>
+          <button class="tab">Messages</button>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4 mt-8">Pills</h3>
+        <div class="pills">
+          <button class="pill active">All</button>
+          <button class="pill">Active</button>
+          <button class="pill">Completed</button>
+          <button class="pill">Archived</button>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4 mt-8">Breadcrumb</h3>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Products</a></li>
+            <li class="breadcrumb-item active">Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Utilities Section -->
+  <section class="demo-section" id="utilities">
+    <div class="container">
+      <h2 class="demo-title">Utility Classes</h2>
+      <p class="demo-subtitle">Powerful utility classes for rapid development</p>
+
+      <div class="component-showcase">
+        <h3 class="text-xl font-semibold mb-4">Colors</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div>
+            <div class="color-swatch bg-primary">Primary</div>
+          </div>
+          <div>
+            <div class="color-swatch bg-secondary">Secondary</div>
+          </div>
+          <div>
+            <div class="color-swatch bg-success">Success</div>
+          </div>
+          <div>
+            <div class="color-swatch bg-warning">Warning</div>
+          </div>
+          <div>
+            <div class="color-swatch bg-danger">Danger</div>
+          </div>
+          <div>
+            <div class="color-swatch" style="background-color: var(--gray-700);">Gray</div>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Spacing & Layout</h3>
+        <div class="code-block mb-6">
+&lt;!-- Margin & Padding --&gt;
+&lt;div class="m-4 p-6"&gt;Margin 4, Padding 6&lt;/div&gt;
+&lt;div class="mt-8 mb-4"&gt;Margin top 8, bottom 4&lt;/div&gt;
+
+&lt;!-- Flexbox --&gt;
+&lt;div class="flex justify-between items-center gap-4"&gt;
+  &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Grid --&gt;
+&lt;div class="grid grid-cols-3 gap-6"&gt;
+  &lt;div&gt;Column 1&lt;/div&gt;
+  &lt;div&gt;Column 2&lt;/div&gt;
+  &lt;div&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Typography</h3>
+        <div class="mb-6">
+          <p class="text-xs mb-2">Extra Small Text (text-xs)</p>
+          <p class="text-sm mb-2">Small Text (text-sm)</p>
+          <p class="text-base mb-2">Base Text (text-base)</p>
+          <p class="text-lg mb-2">Large Text (text-lg)</p>
+          <p class="text-xl mb-2">Extra Large Text (text-xl)</p>
+          <p class="text-2xl mb-2">2XL Text (text-2xl)</p>
+          <p class="text-3xl mb-2">3XL Text (text-3xl)</p>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Shadows & Borders</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="p-6 bg-white shadow-sm rounded-lg text-center">shadow-sm</div>
+          <div class="p-6 bg-white shadow rounded-lg text-center">shadow</div>
+          <div class="p-6 bg-white shadow-lg rounded-lg text-center">shadow-lg</div>
+          <div class="p-6 bg-white shadow-xl rounded-lg text-center">shadow-xl</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section bg-gray text-center">
+    <div class="container">
+      <h3 class="text-2xl font-bold mb-4">Ready to Build Something Amazing?</h3>
+      <p class="text-lg text-gray-600 mb-6">Start using FANA UI in your next project</p>
+      <div class="flex justify-center gap-4">
+        <button class="btn btn-primary btn-lg">Download FANA UI</button>
+        <button class="btn btn-outline-primary btn-lg">Read Documentation</button>
+      </div>
+      <div class="mt-12 pt-8 border-t border-gray-300">
+        <p class="text-gray-600">
+          Made with ❤️ by FANA UI Team<br>
+          <span class="text-sm">Simple, Powerful, Beautiful</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarNav = document.querySelector('.navbar-nav');
+
+    if (navbarToggle) {
+      navbarToggle.addEventListener('click', () => {
+        navbarNav.classList.toggle('active');
+      });
+    }
+
+    // Tab functionality
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+
+    // Pills functionality
+    const pills = document.querySelectorAll('.pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

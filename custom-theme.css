@@ -1,0 +1,104 @@
+/**
+ * FANA UI - Custom Theme
+ * Copy this file and customize it for your brand
+ */
+
+:root {
+    /* ========================================
+     CUSTOM BRAND COLORS
+     Uncomment dan edit untuk customize
+     ======================================== */
+
+    /* Primary Brand Color */
+    /* --primary-500: #your-color; */
+
+    /* Secondary Brand Color */
+    /* --secondary-500: #your-color; */
+
+    /* ========================================
+     CUSTOM TYPOGRAPHY
+     ======================================== */
+
+    /* Custom Font Family */
+    /* @import url('https://fonts.googleapis.com/css2?family=Your+Font&display=swap'); */
+    /* --font-sans: 'Your Font', sans-serif; */
+
+    /* Custom Font Sizes */
+    /* --text-base: 1.125rem; */
+    /* 18px instead of 16px */
+
+    /* ========================================
+     CUSTOM SPACING
+     ======================================== */
+
+    /* Adjust spacing scale */
+    /* --space-4: 1.5rem; */
+    /* 24px instead of 16px */
+
+    /* ========================================
+     CUSTOM BORDERS
+     ======================================== */
+
+    /* Border Radius */
+    /* --radius-lg: 1rem; */
+    /* More rounded */
+    /* --radius-xl: 2rem; */
+    /* Even more rounded */
+
+    /* ========================================
+     CUSTOM SHADOWS
+     ======================================== */
+
+    /* Softer shadows */
+    /* --shadow-base: 0 2px 8px rgba(0, 0, 0, 0.08); */
+    /* --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12); */
+}
+
+/* ========================================
+   CUSTOM COMPONENT OVERRIDES
+   ======================================== */
+
+/* Example: Customize buttons */
+/*
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+*/
+
+/* Example: Customize cards */
+/*
+.card {
+  border: 2px solid var(--gray-200);
+}
+*/
+
+/* Example: Add custom gradient */
+/*
+.gradient-brand {
+  background: linear-gradient(135deg, var(--primary-500), var(--secondary-500));
+}
+*/
+
+/* ========================================
+   DARK MODE (Optional)
+   ======================================== */
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gray-50: #1f2937;
+    --gray-100: #374151;
+    --gray-900: #f9fafb;
+  }
+  
+  body {
+    background-color: var(--gray-900);
+    color: var(--gray-50);
+  }
+  
+  .card {
+    background-color: var(--gray-800);
+  }
+}
+*/
