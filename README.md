@@ -376,9 +376,9 @@ Terinspirasi dari:
 
 ## 🚀 Roadmap
 
-- [ ] Dark mode support
-- [ ] More components (modals, tooltips, dropdowns)
-- [ ] JavaScript plugins
+- [x] Dark mode support
+- [x] More components (modals, tooltips, dropdowns)
+- [x] JavaScript plugins
 - [ ] React/Vue components
 - [ ] CDN hosting
 - [ ] NPM package

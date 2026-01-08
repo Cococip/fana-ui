@@ -181,12 +181,12 @@
 
 .btn-ghost {
     background-color: transparent;
-    color: var(--gray-700);
+    color: var(--text-main);
     border-color: transparent;
 }
 
 .btn-ghost:hover:not(:disabled) {
-    background-color: var(--gray-100);
+    background-color: var(--bg-muted);
 }
 
 /* ========================================

@@ -81,23 +81,54 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [1.1.0] - 2026-01-08
+
+### ✨ New Features
+
+#### 🌙 Dark Mode Support
+- Added native dark mode support using CSS variables
+- Support for automatic detection via `prefers-color-scheme`
+- Support for manual toggle via `[data-theme="dark"]` or `.dark` class
+- Updated all core components to be theme-aware:
+  - Buttons (ghost & variants)
+  - Cards (backgrounds, borders, shadows)
+  - Forms (inputs, selects, switches, groups)
+  - Navigation (navbar, tabs, pills, breadcrumbs, sidebar)
+- Added theme-aware utility classes (`.text-main`, `.text-muted`, `.bg-body`, etc.)
+- Added dark mode toggle functionality to demo page
+
+---
+
+## [1.2.0] - 2026-01-08
+
+### ✨ New Features
+
+#### 📦 New Components
+- **Modals** - Beautiful, responsive, and customizable dialogs
+- **Dropdowns** - Toggleable menus for navigation and actions
+- **Tooltips** - Informative hover tooltips (CSS-based)
+- **Interactive States** - All new components are fully theme-aware
+
+#### ⚙️ JavaScript Core (`fana.js`)
+- Initial release of the FANA UI JavaScript plugin
+- Automated handling for:
+  - Modal opening/closing and backdrops
+  - Dropdown toggles and outside-click closing
+  - Tab switching logic
+  - Dark mode persistence and toggling
+  - Mobile menu interactions
+  - Smooth scrolling for internal links
+
+---
+
 ## 🚀 Upcoming Features
 
-### [1.1.0] - Planned
-- [ ] Modal/Dialog components
-- [ ] Dropdown menus
-- [ ] Tooltips
+### [1.3.0] - Planned
 - [ ] Alerts/Notifications
 - [ ] Progress bars
 - [ ] Badges
-- [ ] Dark mode support
-
-### [1.2.0] - Planned
-- [ ] JavaScript plugins
 - [ ] Accordion component
 - [ ] Carousel/Slider
-- [ ] Date picker
-- [ ] Image gallery
 - [ ] Loading spinners
 
 ### [2.0.0] - Future

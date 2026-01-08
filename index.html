@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FANA UI - Modern CSS Framework</title>
-  <meta name="description" content="FANA UI adalah CSS framework yang simple, powerful, dan mudah digunakan. Kombinasi terbaik dari Tailwind dan Bootstrap.">
+  <meta name="description"
+    content="FANA UI adalah CSS framework yang simple, powerful, dan mudah digunakan. Kombinasi terbaik dari Tailwind dan Bootstrap.">
   <link rel="stylesheet" href="fana.css">
   <style>
     /* Demo specific styles */
     .demo-section {
       padding: var(--space-16) 0;
-      border-bottom: var(--border-width-1) solid var(--gray-200);
+      border-bottom: var(--border-width-1) solid var(--border-color);
     }
 
     .demo-section:last-child {
@@ -20,18 +22,18 @@
     .demo-title {
       font-size: var(--text-4xl);
       font-weight: var(--font-bold);
-      color: var(--gray-900);
+      color: var(--text-main);
       margin-bottom: var(--space-4);
     }
 
     .demo-subtitle {
       font-size: var(--text-lg);
-      color: var(--gray-600);
+      color: var(--text-muted);
       margin-bottom: var(--space-8);
     }
 
     .component-showcase {
-      background-color: var(--gray-50);
+      background-color: var(--bg-muted);
       padding: var(--space-8);
       border-radius: var(--radius-xl);
       margin-bottom: var(--space-6);
@@ -94,6 +96,7 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-sticky">
@@ -104,9 +107,14 @@
       <li class="navbar-item"><a href="#utilities" class="navbar-link">Utilities</a></li>
       <li class="navbar-item"><a href="#docs" class="navbar-link">Docs</a></li>
     </ul>
-    <button class="navbar-toggle">
-      <span class="navbar-toggle-icon"></span>
-    </button>
+    <div class="flex items-center gap-4 ml-auto">
+      <button class="btn btn-sm btn-outline-primary" id="dark-mode-toggle">
+        🌙 Dark Mode
+      </button>
+      <button class="navbar-toggle">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -119,7 +127,8 @@
       </p>
       <div class="flex justify-center gap-4">
         <button class="btn btn-lg bg-white text-primary">Get Started</button>
-        <button class="btn btn-lg btn-outline-primary" style="border-color: white; color: white;">View on GitHub</button>
+        <button class="btn btn-lg btn-outline-primary" style="border-color: white; color: white;">View on
+          GitHub</button>
       </div>
     </div>
   </section>
@@ -129,12 +138,13 @@
     <div class="container">
       <h2 class="demo-title text-center">Kenapa FANA UI?</h2>
       <p class="demo-subtitle text-center">Framework yang dirancang untuk developer modern</p>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="text-center">
           <div class="feature-icon mx-auto">⚡</div>
           <h3 class="text-2xl font-bold mb-3">Simple & Intuitif</h3>
-          <p class="text-gray-600">Naming yang mudah diingat dan konsisten. Tidak perlu belajar lama untuk mulai produktif.</p>
+          <p class="text-gray-600">Naming yang mudah diingat dan konsisten. Tidak perlu belajar lama untuk mulai
+            produktif.</p>
         </div>
         <div class="text-center">
           <div class="feature-icon mx-auto">🎨</div>
@@ -191,9 +201,9 @@
       </div>
 
       <div class="code-block">
-&lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
-&lt;button class="btn btn-outline-secondary"&gt;Outline Button&lt;/button&gt;
-&lt;button class="btn btn-success btn-lg"&gt;Large Success&lt;/button&gt;
+        &lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+        &lt;button class="btn btn-outline-secondary"&gt;Outline Button&lt;/button&gt;
+        &lt;button class="btn btn-success btn-lg"&gt;Large Success&lt;/button&gt;
       </div>
     </div>
   </section>
@@ -211,7 +221,8 @@
             <p class="card-subtitle">Card subtitle</p>
           </div>
           <div class="card-body">
-            <p class="card-text">This is a simple card with header, body, and footer sections. Perfect for displaying content.</p>
+            <p class="card-text">This is a simple card with header, body, and footer sections. Perfect for displaying
+              content.</p>
           </div>
           <div class="card-footer">
             <button class="btn btn-primary btn-sm">Learn More</button>
@@ -221,7 +232,8 @@
         <div class="card card-primary">
           <div class="card-body">
             <h3 class="card-title">Primary Card</h3>
-            <p class="card-text">Beautiful gradient background with white text. Great for highlighting important content.</p>
+            <p class="card-text">Beautiful gradient background with white text. Great for highlighting important
+              content.</p>
             <button class="btn bg-white text-primary mt-4">Action</button>
           </div>
         </div>
@@ -235,14 +247,14 @@
       </div>
 
       <div class="code-block">
-&lt;div class="card"&gt;
-  &lt;div class="card-header"&gt;
-    &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
-  &lt;/div&gt;
-  &lt;div class="card-body"&gt;
-    &lt;p class="card-text"&gt;Card content here&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+        &lt;div class="card"&gt;
+        &lt;div class="card-header"&gt;
+        &lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt;Card content here&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
       </div>
     </div>
   </section>
@@ -315,15 +327,15 @@
       </div>
 
       <div class="code-block">
-&lt;div class="form-group"&gt;
-  &lt;label class="form-label"&gt;Email&lt;/label&gt;
-  &lt;input type="email" class="form-input" placeholder="Enter email"&gt;
-&lt;/div&gt;
+        &lt;div class="form-group"&gt;
+        &lt;label class="form-label"&gt;Email&lt;/label&gt;
+        &lt;input type="email" class="form-input" placeholder="Enter email"&gt;
+        &lt;/div&gt;
 
-&lt;div class="form-check"&gt;
-  &lt;input type="checkbox" class="form-check-input" id="check"&gt;
-  &lt;label class="form-check-label" for="check"&gt;Remember me&lt;/label&gt;
-&lt;/div&gt;
+        &lt;div class="form-check"&gt;
+        &lt;input type="checkbox" class="form-check-input" id="check"&gt;
+        &lt;label class="form-check-label" for="check"&gt;Remember me&lt;/label&gt;
+        &lt;/div&gt;
       </div>
     </div>
   </section>
@@ -363,6 +375,84 @@
     </div>
   </section>
 
+  <!-- Interactive Components Section -->
+  <section class="demo-section">
+    <div class="container">
+      <h2 class="demo-title">Interactive Components</h2>
+      <p class="demo-subtitle">Modals, Dropdowns, and Tooltips powered by FANA JS</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Modals Demo -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Modals</h3>
+            <p class="card-text mb-4">Beautiful and responsive dialogs for important information.</p>
+            <button class="btn btn-primary" data-modal="demo-modal">Launch Modal</button>
+          </div>
+        </div>
+
+        <!-- Dropdowns Demo -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Dropdowns</h3>
+            <p class="card-text mb-4">Toggleable menus for clean navigation and actions.</p>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle">Options Menu</button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Navigation</li>
+                <li><button class="dropdown-item">Profile</button></li>
+                <li><button class="dropdown-item">Settings</button></li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-header">Danger Zone</li>
+                <li><button class="dropdown-item text-danger">Logout</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tooltips Demo -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Tooltips</h3>
+            <p class="card-text mb-4">Informative tooltips that appear on hover.</p>
+            <div class="flex gap-4">
+              <div class="tooltip">
+                <button class="btn btn-outline-primary btn-sm">Hover Top</button>
+                <span class="tooltip-content tooltip-top">Hello from Top!</span>
+              </div>
+              <div class="tooltip">
+                <button class="btn btn-outline-secondary btn-sm">Hover Bottom</button>
+                <span class="tooltip-content tooltip-bottom">Hello from Bottom!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Elements -->
+  <div class="modal" id="demo-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">FANA UI Modal</h3>
+        <button class="modal-close" data-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>This is a standard modal dialog. It's fully responsive, supports backdrops, and can be customized in size.
+        </p>
+        <div class="bg-muted p-4 rounded-lg mt-4 border">
+          <p class="text-sm">You can put anything here - forms, images, or additional content.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-ghost" data-close>Cancel</button>
+        <button class="btn btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Utilities Section -->
   <section class="demo-section" id="utilities">
     <div class="container">
@@ -394,22 +484,22 @@
 
         <h3 class="text-xl font-semibold mb-4">Spacing & Layout</h3>
         <div class="code-block mb-6">
-&lt;!-- Margin & Padding --&gt;
-&lt;div class="m-4 p-6"&gt;Margin 4, Padding 6&lt;/div&gt;
-&lt;div class="mt-8 mb-4"&gt;Margin top 8, bottom 4&lt;/div&gt;
+          &lt;!-- Margin & Padding --&gt;
+          &lt;div class="m-4 p-6"&gt;Margin 4, Padding 6&lt;/div&gt;
+          &lt;div class="mt-8 mb-4"&gt;Margin top 8, bottom 4&lt;/div&gt;
 
-&lt;!-- Flexbox --&gt;
-&lt;div class="flex justify-between items-center gap-4"&gt;
-  &lt;div&gt;Item 1&lt;/div&gt;
-  &lt;div&gt;Item 2&lt;/div&gt;
-&lt;/div&gt;
+          &lt;!-- Flexbox --&gt;
+          &lt;div class="flex justify-between items-center gap-4"&gt;
+          &lt;div&gt;Item 1&lt;/div&gt;
+          &lt;div&gt;Item 2&lt;/div&gt;
+          &lt;/div&gt;
 
-&lt;!-- Grid --&gt;
-&lt;div class="grid grid-cols-3 gap-6"&gt;
-  &lt;div&gt;Column 1&lt;/div&gt;
-  &lt;div&gt;Column 2&lt;/div&gt;
-  &lt;div&gt;Column 3&lt;/div&gt;
-&lt;/div&gt;
+          &lt;!-- Grid --&gt;
+          &lt;div class="grid grid-cols-3 gap-6"&gt;
+          &lt;div&gt;Column 1&lt;/div&gt;
+          &lt;div&gt;Column 2&lt;/div&gt;
+          &lt;div&gt;Column 3&lt;/div&gt;
+          &lt;/div&gt;
         </div>
 
         <h3 class="text-xl font-semibold mb-4">Typography</h3>
@@ -425,10 +515,10 @@
 
         <h3 class="text-xl font-semibold mb-4">Shadows & Borders</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="p-6 bg-white shadow-sm rounded-lg text-center">shadow-sm</div>
-          <div class="p-6 bg-white shadow rounded-lg text-center">shadow</div>
-          <div class="p-6 bg-white shadow-lg rounded-lg text-center">shadow-lg</div>
-          <div class="p-6 bg-white shadow-xl rounded-lg text-center">shadow-xl</div>
+          <div class="p-6 bg-card shadow-sm rounded-lg text-center border-main border">shadow-sm</div>
+          <div class="p-6 bg-card shadow rounded-lg text-center border-main border">shadow</div>
+          <div class="p-6 bg-card shadow-lg rounded-lg text-center border-main border">shadow-lg</div>
+          <div class="p-6 bg-card shadow-xl rounded-lg text-center border-main border">shadow-xl</div>
         </div>
       </div>
     </div>
@@ -452,45 +542,7 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile menu toggle
-    const navbarToggle = document.querySelector('.navbar-toggle');
-    const navbarNav = document.querySelector('.navbar-nav');
-
-    if (navbarToggle) {
-      navbarToggle.addEventListener('click', () => {
-        navbarNav.classList.toggle('active');
-      });
-    }
-
-    // Tab functionality
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-      });
-    });
-
-    // Pills functionality
-    const pills = document.querySelectorAll('.pill');
-    pills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        pills.forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-      });
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
+  <script src="fana.js"></script>
 </body>
+
 </html>

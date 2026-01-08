@@ -1,0 +1,87 @@
+/**
+ * FANA UI - Dropdown Components
+ * Interactive and beautiful dropdown menus
+ */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: var(--z-dropdown);
+    display: none;
+    min-width: 12rem;
+    padding: var(--space-2) 0;
+    margin-top: var(--space-2);
+    background-color: var(--card-bg);
+    border: var(--border-width-1) solid var(--card-border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    list-style: none;
+    text-align: left;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+    animation: dropdown-fade-in 200ms ease-out;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--space-2) var(--space-6);
+    clear: both;
+    font-weight: var(--font-normal);
+    color: var(--text-main);
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.dropdown-item:hover {
+    background-color: var(--bg-muted);
+    color: var(--primary-500);
+}
+
+.dropdown-divider {
+    height: 0;
+    margin: var(--space-2) 0;
+    overflow: hidden;
+    border-top: var(--border-width-1) solid var(--card-border);
+}
+
+.dropdown-header {
+    display: block;
+    padding: var(--space-2) var(--space-6);
+    margin-bottom: 0;
+    font-size: var(--text-xs);
+    font-weight: var(--font-bold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Alignment */
+.dropdown-right .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+@keyframes dropdown-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

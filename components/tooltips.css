@@ -1,0 +1,78 @@
+/**
+ * FANA UI - Tooltip Components
+ * Simple CSS tooltips
+ */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-content {
+    visibility: hidden;
+    position: absolute;
+    z-index: var(--z-tooltip);
+    background-color: var(--gray-900);
+    color: var(--white);
+    text-align: center;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-size: var(--text-xs);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    pointer-events: none;
+}
+
+/* Positioning */
+.tooltip-top {
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-bottom {
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-left {
+    top: 50%;
+    right: 125%;
+    transform: translateY(-50%);
+}
+
+.tooltip-right {
+    top: 50%;
+    left: 125%;
+    transform: translateY(-50%);
+}
+
+/* Show tooltip */
+.tooltip:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip Arrow */
+.tooltip-content::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.tooltip-top .tooltip-content::after {
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-color: var(--gray-900) transparent transparent transparent;
+}
+
+.tooltip-bottom .tooltip-content::after {
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-color: transparent transparent var(--gray-900) transparent;
+}

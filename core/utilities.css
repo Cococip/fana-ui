@@ -719,6 +719,14 @@
     color: var(--black);
 }
 
+.text-main {
+    color: var(--text-main);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
 /* Background Colors */
 .bg-primary {
     background-color: var(--primary-500);
@@ -756,13 +764,25 @@
     background-color: var(--transparent);
 }
 
+.bg-body {
+    background-color: var(--bg-body);
+}
+
+.bg-card {
+    background-color: var(--bg-card);
+}
+
+.bg-muted {
+    background-color: var(--bg-muted);
+}
+
 /* ========================================
    BORDER UTILITIES
    ======================================== */
 
 /* Border Width */
 .border {
-    border: var(--border-width-1) solid var(--gray-300);
+    border: var(--border-width-1) solid var(--border-color);
 }
 
 .border-0 {

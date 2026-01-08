@@ -8,9 +8,9 @@
    ======================================== */
 
 .card {
-    background-color: var(--white);
+    background-color: var(--card-bg);
     border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-base);
+    box-shadow: var(--card-shadow);
     overflow: hidden;
     transition: all var(--transition-base);
 }
@@ -26,7 +26,7 @@
 
 .card-header {
     padding: var(--space-6);
-    border-bottom: var(--border-width-1) solid var(--gray-200);
+    border-bottom: var(--border-width-1) solid var(--card-border);
 }
 
 .card-body {
@@ -35,8 +35,8 @@
 
 .card-footer {
     padding: var(--space-6);
-    border-top: var(--border-width-1) solid var(--gray-200);
-    background-color: var(--gray-50);
+    border-top: var(--border-width-1) solid var(--card-border);
+    background-color: var(--bg-muted);
 }
 
 /* ========================================
@@ -46,19 +46,19 @@
 .card-title {
     font-size: var(--text-xl);
     font-weight: var(--font-semibold);
-    color: var(--gray-900);
+    color: var(--text-main);
     margin-bottom: var(--space-2);
 }
 
 .card-subtitle {
     font-size: var(--text-sm);
-    color: var(--gray-600);
+    color: var(--text-muted);
     margin-bottom: var(--space-4);
 }
 
 .card-text {
     font-size: var(--text-base);
-    color: var(--gray-700);
+    color: var(--text-main);
     line-height: var(--leading-relaxed);
 }
 
@@ -99,7 +99,7 @@
    ======================================== */
 
 .card-bordered {
-    border: var(--border-width-2) solid var(--gray-200);
+    border: var(--border-width-2) solid var(--card-border);
     box-shadow: none;
 }
 
@@ -109,7 +109,7 @@
 
 .card-flat {
     box-shadow: none;
-    background-color: var(--gray-50);
+    background-color: var(--bg-muted);
 }
 
 /* ========================================
