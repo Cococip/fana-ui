@@ -1,0 +1,68 @@
+/**
+ * FANA UI - Accordion Components
+ * Expandable content sections
+ */
+
+.accordion {
+    border: var(--border-width-1) solid var(--card-border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    background-color: var(--card-bg);
+}
+
+.accordion-item {
+    border-bottom: var(--border-width-1) solid var(--card-border);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: var(--space-4) var(--space-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color var(--transition-base);
+}
+
+.accordion-header:hover {
+    background-color: var(--bg-muted);
+}
+
+.accordion-title {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: var(--text-main);
+}
+
+.accordion-icon {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    transition: transform var(--transition-base);
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base) ease-out;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px;
+    /* Arbitrary large value */
+}
+
+.accordion-body {
+    padding: var(--space-6);
+    color: var(--text-main);
+}

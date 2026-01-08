@@ -121,15 +121,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 🚀 Upcoming Features
+## [1.3.0] - 2026-01-08
 
-### [1.3.0] - Planned
-- [ ] Alerts/Notifications
-- [ ] Progress bars
-- [ ] Badges
-- [ ] Accordion component
-- [ ] Carousel/Slider
-- [ ] Loading spinners
+### ✨ New Features
+
+#### 📢 Alerts & Feedback
+- **Alerts** - 5 color variants with support for titles, icons, and dismiss buttons
+- **Badges** - Subtle and bold status indicators, rounded and outline styles
+- **Progress Bars** - Flexible progress indicators with stripes and animations
+
+#### 📂 Content Containers
+- **Accordions** - Expandable content sections with smooth transitions
+- **Exclusive Mode** - Support for "data-exclusive" to auto-close other items
+
+#### ⚙️ JavaScript Core (`fana.js`)
+- Added logic for Accordion toggling
+- Improved component initialization
+
+---
+
+## 🚀 Upcoming Features
 
 ### [2.0.0] - Future
 - [ ] React components

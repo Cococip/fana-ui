@@ -1,0 +1,85 @@
+/**
+ * FANA UI - Progress Components
+ * Visual indicators for progress and loading
+ */
+
+.progress {
+    display: flex;
+    height: var(--space-3);
+    overflow: hidden;
+    font-size: var(--text-xs);
+    background-color: var(--bg-muted);
+    border-radius: var(--radius-full);
+    width: 100%;
+    margin-bottom: var(--space-4);
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--white);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--primary-500);
+    transition: width 0.6s ease;
+}
+
+/* Progress Variants */
+.progress-primary .progress-bar {
+    background-color: var(--primary-500);
+}
+
+.progress-secondary .progress-bar {
+    background-color: var(--secondary-500);
+}
+
+.progress-success .progress-bar {
+    background-color: var(--success-500);
+}
+
+.progress-warning .progress-bar {
+    background-color: var(--warning-500);
+}
+
+.progress-danger .progress-bar {
+    background-color: var(--danger-500);
+}
+
+/* Progress Sizes */
+.progress-sm {
+    height: var(--space-1);
+}
+
+.progress-lg {
+    height: var(--space-5);
+}
+
+/* Progress Striped */
+.progress-striped .progress-bar {
+    background-image: linear-gradient(45deg,
+            rgba(255, 255, 255, 0.15) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.15) 50%,
+            rgba(255, 255, 255, 0.15) 75%,
+            transparent 75%,
+            transparent);
+    background-size: var(--space-4) var(--space-4);
+}
+
+/* Progress Animated */
+.progress-animated .progress-bar {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: var(--space-4) 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}

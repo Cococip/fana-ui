@@ -85,6 +85,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ========================================
+    // ACCORDION SYSTEM
+    // ========================================
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            const accordion = item.parentElement;
+
+            // Optional: Close other items (exclusive accordion)
+            if (accordion.hasAttribute('data-exclusive')) {
+                accordion.querySelectorAll('.accordion-item').forEach(i => {
+                    if (i !== item) i.classList.remove('active');
+                });
+            }
+
+            item.classList.toggle('active');
+        });
+    });
+
+    // ========================================
     // DARK MODE SYSTEM
     // ========================================
     const darkModeToggle = document.getElementById('dark-mode-toggle');
